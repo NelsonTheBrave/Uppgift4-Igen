@@ -67,8 +67,12 @@ ul {
 
 li {
   line-height: 1.27em;
-  cursor: pointer;
+  cursor: url('img/pencil.png') 0 32, auto;
   width: fit-content;
+}
+
+li:hover {
+  color: gray;
 }
 
 /* ███████████████ INPUT SECTION ███████████████ */

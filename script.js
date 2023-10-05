@@ -80,7 +80,7 @@ function adjustInputWidth() {
 // Function to grab the eraser
 function grabEraser() {
   eraserCursorTrigger.innerHTML =
-    "<style>*{cursor: url('img/eraser2small.png'), auto !important}</style>"; // Creating a style tag in DOM to add styling to the universal selector *, !important is to override pointer style of li elements
+    "<style>*{cursor: url('img/eraser2small.png') 0 23, auto !important}</style>"; // Creating a style tag in DOM to add styling to the universal selector *, !important is to override pointer style of li elements
   ("background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(img/eraser2.png) center/cover");
   eraser.style =
     "background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(img/eraser2.png) center/cover; background-size: 40px 30px; height: 30px; width: 40px; cursor: url('img/eraser2small.png'), auto;";
