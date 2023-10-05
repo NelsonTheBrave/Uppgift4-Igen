@@ -6,12 +6,25 @@
     <title>Erik's Todo List App</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <div id="eraserCursorTrigger"></div>
+    <div id="eraserHover">
+      <style>
+        #eraser:hover {
+          transform: rotate(12deg) scale(1.5) translate(70px, 0px);
+          transition: all 0.6s ease-in-out;
+        }
+      </style>
+    </div>
   </head>
   <body>
-    <!-- ███████████████ TEXT SECTION ███████████████ -->
+    <!-- ███████████████ TOP SECTION ███████████████ -->
 
     <div id="clipboardBgc">
-      <h1>Erik's Todo List</h1>
+      <div id="eraserContainer">
+        <h1>Erik's Todo List</h1>
+        <div id="eraser"></div>
+      </div>
+      <!-- <span id="eraserBtn">Yooo</span> -->
       <p id="completedTasks">Number of tasks completed: 0/0</p>
 
       <!-- ███████████████ LIST SECTION ███████████████ -->
@@ -21,9 +34,9 @@
 
       <!-- ███████████████ INPUT SECTION ███████████████ -->
       <div id="inputSection">
-      <input id="input" type="text" placeholder="add something new to the list"">
-      <button id="submitBtn">&#x1F589;</button>
-    </div>
+        <input id="input" type="text" placeholder="add something new to the list"">
+        <button id="submitBtn">&#x1F589;</button>
+      </div>
     </div>
 
     <!-- ███████████████ THE REST ███████████████ -->

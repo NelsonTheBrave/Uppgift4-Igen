@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Shadows+Into+Light+Two&display=swap");
 
+
 html {
   background-color: gray;
   font-family: "Shadows Into Light Two", cursive;
@@ -21,13 +22,28 @@ body {
   align-items: center;
 }
 
-/* ███████████████ TEXT SECTION ███████████████ */
+/* ███████████████ TOP SECTION ███████████████ */
+
+#eraserContainer {
+  display: flex;
+  padding-top: 170px;
+  transform: translateX(-70px);
+  margin-bottom: 0; 
+  flex-direction: row;
+}
 
 h1 {
   color: orange;
-  padding-top: 170px;
-  transform: translateX(-90px);
-  margin-bottom: 0;
+  margin: 22px 0 0 10px;
+}
+
+#eraser {
+transform: translate(100px, 30px);
+background: url(img/eraser2.png) center/cover;
+background-size: 40px 30px;
+height: 30px;
+width: 40px;
+cursor: grab;
 }
 
 #completedTasks {
@@ -52,6 +68,7 @@ ul {
 li {
   line-height: 1.27em;
   cursor: pointer;
+  width: fit-content;
 }
 
 /* ███████████████ INPUT SECTION ███████████████ */
@@ -80,6 +97,11 @@ input {
   background: transparent;
   color: orange;
   /* font-size: 20px; */
-  transform: scale(1.5) translateY(-3px);
+  transform: scale(2.5) translateY(-3px);
   border: none;
+}
+
+#submitBtn:hover {
+  transform: scale(4) translateY(-3px) rotate(12deg);
+  transition: all 0.5s ease-in-out;
 }
