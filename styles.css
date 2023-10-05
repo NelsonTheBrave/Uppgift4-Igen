@@ -27,7 +27,7 @@ body {
 #eraserContainer {
   display: flex;
   padding-top: 170px;
-  transform: translateX(-70px);
+  transform: translateX(-10px);
   margin-bottom: 0; 
   flex-direction: row;
 }
@@ -37,8 +37,14 @@ h1 {
   margin: 22px 0 0 10px;
 }
 
+#grabEraserText {
+transform: translate(110px, -5px);
+font-size: 12px;
+width: 130px;
+}
+
 #eraser {
-transform: translate(100px, 30px);
+transform: translate(20px, 30px);
 background: url(img/eraser2.png) center/cover;
 background-size: 40px 30px;
 height: 30px;
