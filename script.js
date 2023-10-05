@@ -85,7 +85,7 @@ function grabEraser() {
   eraser.style =
     "background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(img/eraser2.png) center/cover; background-size: 40px 30px; height: 30px; width: 40px; cursor: url('img/eraser2small.png'), auto;";
   eraserHover.innerHTML = "";
-  eraserText.innerText = "(click to put back eraser)";
+  eraserText.innerHTML = "(click to <strong>put back</strong> eraser)";
   eraserCursor = true;
 
   updateListListener(); // Update status of event listener for list items
@@ -98,7 +98,7 @@ function dropEraser() {
     "transform: translate(20px, 30px); background: url(img/eraser2.png) center/cover; background-size: 40px 30px; height: 30px; width: 40px; cursor: grab;";
   eraserHover.innerHTML =
     "<style>#eraser:hover {transform: rotate(12deg) scale(1.5) translate(20px, 20px); transition: all 0.6s ease-in-out;}</style>";
-    eraserText.innerText = "(click to grab eraser)";
+    eraserText.innerHTML = "(click to <strong>grab</strong> eraser)";
   eraserCursor = false;
   updateListListener();
 }
